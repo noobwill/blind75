@@ -1,7 +1,7 @@
 import java.util.Set;
 import java.util.HashSet;
 
-public Solution3{
+public class Solution3{
   public boolean containsDuplicate(int[] nums){
     int n = nums.length;
 

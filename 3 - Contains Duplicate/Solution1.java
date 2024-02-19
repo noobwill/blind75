@@ -1,5 +1,5 @@
 // time complexity of O(n^2)
-public Solution1{
+public class Solution1{
   public boolean containsDuplicate(int[] nums){
     int n = nums.length;
 
