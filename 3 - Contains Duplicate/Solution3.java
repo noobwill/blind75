@@ -7,6 +7,13 @@ public class Solution3{
 
     Set<Integer> set = new HashSet<>();
 
+    if (n == 0 || n == 1){
+      return false;
+    }
+    else if (n == 2){
+      return nums[0] == nums[1];
+    }
+
     for (int num : nums){
       if (!set.contains(num)){
         set.add(num);
