@@ -9,10 +9,10 @@ public class Solution1{
   
   public static int[] findProductExceptSelf(int[] nums){
     int n = nums.length;
-    int[] products = new int[n];
+    int[] product = new int[n];
 
     for (int i = 0; i < n; i++){
-      int product = 1;
+      int hold = 1;
 
       for (int j = 0; j < n; j++){
         if (i == j){
@@ -20,16 +20,16 @@ public class Solution1{
         }
 
         if (nums[j] == 0){
-          product = 0;
+          hold = 0;
           break;
         }
 
-        product *= nums[j];
+        hold *= nums[j];
       }
 
-      products[i] = product;
+      product[i] = hold;
     }
 
-    return products;
+    return product;
   }
 }
